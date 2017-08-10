@@ -4,19 +4,23 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleOne={
-    title:'article one i teja',
-    heading:'Article one',
-    date: 'aug 10 2017',
-    content:` <p>
-               THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file.
-            </p>
-             <p>
-                 THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file. THis is the content of my first file.
-            </p>
-            `
-    
-};
+var articles{
+ 
+    articleOne:{
+                 title: 'article one i teja',
+                 heading: 'Article one'
+                 date:  'aug 10 2017',
+                 content :` <p>
+                            is the he content of my first file.  first file. THis is the content of my first file.
+                         </p>
+                         
+                        
+},
+    articleTwo:{},
+    articleThree:{}
+ 
+}            `
+
 function createTemplate(data)
 {
 var title=data.title;
